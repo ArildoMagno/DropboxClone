@@ -18,13 +18,16 @@ const Section: React.FC<Props> = ({ variant, title, description }) => {
   const buttonVariant = Math.round(Math.random());
 
   function handleToggle() {
-    //if (window.toggleActiveMenu) window.toggleActiveMenu();
+    //vaia ativar o menu
+    if (window.toggleActiveMenu) window.toggleActiveMenu();
   }
 
   return (
       //container que cobre tudo
       //wrapper que fica em volta
       //header a parte de cima
+
+      //colocou no botao a funcao handleToggle para abrir o menu
     <Container className={variant}>
       <HeaderWrapper>
         <Header>
